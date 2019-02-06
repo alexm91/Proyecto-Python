@@ -1,29 +1,21 @@
 import scrapy
 
+nombre_archivo = 'hoteles.txt'
+
 class QuotesSpider(scrapy.Spider):
-    name = "spider_"
+    name = "spider_participantes"
     start_urls = [
-            'https://www.plusvalia.com/casas-en-venta-en-quito.html',
-            'https://www.plusvalia.com/casas-en-venta-en-quito-pagina-2.html',
-            'https://www.plusvalia.com/casas-en-venta-en-quito-pagina-3.html',
-            'https://www.plusvalia.com/casas-en-venta-en-quito-pagina-4.html',
-            'https://www.plusvalia.com/casas-en-venta-en-quito-pagina-5.html',
-            'https://www.plusvalia.com/casas-en-venta-en-quito-pagina-6.html',
-            'https://www.plusvalia.com/casas-en-venta-en-quito-pagina-7.html',
-            'https://www.plusvalia.com/casas-en-venta-en-quito-pagina-8.html',
-            'https://www.plusvalia.com/casas-en-venta-en-quito-pagina-9.html',
-            'https://www.plusvalia.com/casas-en-venta-en-quito-pagina-10.html',
+        'file:///C:/Users/alebu/Documents/EPN%20FIS/Workspace/PythonPycharm/Proyecto-Python/WEB/HotelManta1.html',
+        'file:///C:/Users/alebu/Documents/EPN%20FIS/Workspace/PythonPycharm/Proyecto-Python/WEB/HotelManta2.html',
+        'file:///C:/Users/alebu/Documents/EPN%20FIS/Workspace/PythonPycharm/Proyecto-Python/WEB/HotelManta3.html'
 
     ]
 
     def parse(self, response):
-        resultado = response.xpath('//*[@id="avisos-content"]')
 
+        for i in response.css('.item__flex-column'):
+            nombres = i.css('.name__copytext::text').extract()
+            precios = i.css('.price_min::text').extract()
+            rating = i.css('.rating-box__value::text').extract()
+            yield {'Nombres': nombres, 'Precios': precios, 'Rating': rating}
 
-        for i, casas in enumerate(resultado):
-            lugares = casas.xpath('//div/div/div/div/span/span/text()').extract()
-            disponibles = casas.css(
-                'div.aviso-data.aviso-data--right > div > ul > li:nth-child(1) > b::text').extract()
-            precio = casas.css('.aviso-data-price-value::text').extract()
-
-            yield {'index': i, 'title': precio}
