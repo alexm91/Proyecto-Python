@@ -3,11 +3,10 @@ import scrapy
 nombre_archivo = 'hoteles.txt'
 
 class QuotesSpider(scrapy.Spider):
-    name = "spider_participantes"
+    name = "spider_hoteles"
     start_urls = [
         'file:///C:/Users/alebu/Documents/EPN%20FIS/Workspace/PythonPycharm/Proyecto-Python/WEB/HotelManta1.html',
         'file:///C:/Users/alebu/Documents/EPN%20FIS/Workspace/PythonPycharm/Proyecto-Python/WEB/HotelManta2.html',
-        'file:///C:/Users/alebu/Documents/EPN%20FIS/Workspace/PythonPycharm/Proyecto-Python/WEB/HotelManta3.html'
 
     ]
 
@@ -17,5 +16,7 @@ class QuotesSpider(scrapy.Spider):
             nombres = i.css('.name__copytext::text').extract()
             precios = i.css('.price_min::text').extract()
             rating = i.css('.rating-box__value::text').extract()
-            yield {'Nombres': nombres, 'Precios': precios, 'Rating': rating}
+            pagina = i.css('.item__deal-best-ota::text').extract()
+            ubicacion = i.css('.location-details::text').extract()
+            yield {'Nombres': nombres, 'Precios': precios, 'Rating': rating, 'Ubicacion': ubicacion, 'Pagina': pagina}
 

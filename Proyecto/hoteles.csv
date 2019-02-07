@@ -1,59 +1,46 @@
-Nombres,Precios,Rating
-Oro Verde Manta,$105,8.7
-Mantahost,$116,8.5
-Poseidon,$119,8.4
-Best Western Premier Sail Plaza,$129,8.3
-Barbasquillo,$55,7.1
-Condominio Manta,$27,8.4
-Hostal Rosa Mar,$25,8.0
-Hostal El Paraiso,$64,/
-Balandra,$102,8.8
-Boutique Nazo,$45,8.5
-Mar Azul,$120,8.1
-Hamilton,$68,8.0
-Villa Kite,$71,7.8
-La Victoria,$50,8.3
-Francisco Habitaciones,$31,8.4
-de la Abuela,$50,7.5
-Hostal El Naufrago,$22,/
-Hostal Sky,$45,/
-Pacifico Tarqui,$25,/
-Los Mantas,$32,/
-Boutique Nazo,$45,/
-Hermosa Casa De Alquiler Para Vacacionar En Manta,$121,/
-Perla Spondylus,$91,8.6
-Antares,$58,7.5
-Mantahost Hotel,$135,7.8
-Mar Y Tierra,$35,7.5
-Hostal Las Velas,$36,/
-Los Almendros,$95,/
-Torres del Norte,$150,/
-Sauna Club La Boheme,$23,/
-Hostal Restaurante Las Heliconias,$70,/
-Blue Pacific,$52,8.5
-Hostal Manakin,$56,7.8
-Vistalmar,$99,7.9
-Bucaneiro,$75,8.0
-Pacoche Lodge,$80,8.3
-Rishuo,$75,/
-Porto Velho,$70,/
-Stella Blu,$64,/
-Maria Isabel,$70,8.1
-Costa Verde,$40,8.2
-Pacifico Centro,$22,7.7
-Cabañas La Travesia,$89,8.1
-Golden Mar,$60,7.5
-Manta Airport,$35,/
-Apartamento Ideal Para Parejas O Ejecutivos,$45,/
-Aquamarina Hotel,$80,/
-Playa Murcielago,$45,/
-Luz De Aurora,$25,/
-El Naufrago,$28,/
-Condominio Kite Beach Apart 102,$80,/
-Francisco,$58,/
-Hostal Desireny,$33,/
-Blue Ocean,$50,/
-Departamentos Manta,$50,/
-Pikeiro Blue,$29,/
-Centro Turistico San Mateo,$35,/
-Hostal Piazzolla,$64,/
+Nombres,Precios,Rating,Ubicacion,Pagina
+Balandra,$119,8.8,"Manta, A 0.3 km de la playa",Hoteles.com
+Mantahost,$144,8.5,"Manta, A 0.3 km de la playa",Hoteles.com
+Poseidon,$250,8.4,"Manta, a 6.6 km de: centro de la ciudad",Booking.com
+Perla Spondylus,$120,8.6,"Manta, A 0.6 km de la playa",Booking.com
+Oro Verde Manta,$300,8.7,"Manta, A 0.1 km de la playa",Hoteles.com
+Hostal Sky,$45,/,"Manta, A 0.3 km de la playa",Hoteles.com
+Best Western Premier Sail Plaza,$191,8.3,"Manta, A 0.2 km de la playa",Hoteles.com
+Hamilton,$70,8.0,"Manta, A 0.4 km de la playa",Booking.com
+Boutique Nazo,$60,8.5,"Manta, junto a la playa",Hoteles.com
+Antares,$68,7.5,"Manta, A 0.3 km de la playa",Hoteles.com
+Los Almendros,$110,/,"Manta, A 0.7 km de la playa",Booking.com
+"Exclusivo Departamento 3 Dormitorios, Vista Al Mar/acceso Playa",$150,/,"Manta, a 0.0 km de: centro de la ciudad",HomeAway
+Costa Verde,$45,8.2,"Manta, A 0.6 km de la playa",Hostelworld
+Condominio Manta,$90,8.4,"Manta, A 0.7 km de la playa",Hoteles.com
+Mar Azul,$117,8.1,"Manta, A 0.4 km de la playa",Hoteles.com
+Mantahost Hotel,$165,7.8,"Manta, A 0.5 km de la playa",Booking.com
+Stella Blu,$64,/,"Manta, A 0.6 km de la playa",Booking.com
+Aquamarina Hotel,$90,/,"Manta, a 1.6 km de: centro de la ciudad",Booking.com
+Playa Murcielago,$60,/,"Manta, A 0.3 km de la playa",Hoteles.com
+Luz De Aurora,$40,/,"Manta, a 1.7 km de: centro de la ciudad",Booking.com
+Villa Kite,$84,7.8,"Manta, a 15.4 km de: centro de la ciudad",Hoteles.com
+Blue Pacific,$70,8.5,"Manta, A 0.2 km de la playa",Despegar.com
+Pacoche Lodge,$81,8.3,"Manta, a 17.2 km de: centro de la ciudad",Despegar.com
+Bucaneiro,$90,8.0,"Manta, A 0.2 km de la playa",Booking.com
+El Naufrago,$36,/,"Manta, a 4.4 km de: centro de la ciudad",Booking.com
+Francisco,$91,/,"Manta, A 0.4 km de la playa",Booking.com
+Hostal Desireny,$33,/,"Manta, a 3.1 km de: centro de la ciudad",Booking.com
+Blue Ocean,$50,/,"Manta, a 1.5 km de: centro de la ciudad",Booking.com
+Pikeiro Blue,$70,/,"Manta, a 1.0 km de: centro de la ciudad",Booking.com
+Hostal El Paraiso,$64,/,"Manta, A 0.7 km de la playa",Booking.com
+Maria Isabel,$85,8.1,"Manta, A 0.2 km de la playa",Booking.com
+Golden Mar,$110,7.5,"Manta, A 0.1 km de la playa",Booking.com
+Hostal Rosa Mar,$25,8.0,"Manta, a 1.1 km de: centro de la ciudad",Booking.com
+La Victoria,$50,8.3,"Manta, a 0.8 km de: centro de la ciudad",Booking.com
+Hostal Piazzolla,$91,/,"Manta, a 0.8 km de: centro de la ciudad",Booking.com
+Centro Turistico San Mateo,$35,/,"Manta, a 11.8 km de: centro de la ciudad",Booking.com
+Los Mantas,$32,/,"Manta, a 2.9 km de: centro de la ciudad",Despegar.com
+de la Abuela,$50,7.5,"Manta, A 0.4 km de la playa",Booking.com
+Sounds Of The Waves,$90,8.4,"Manta, a 16.4 km de: centro de la ciudad",Booking.com
+Avellan,$73,/,"Manta, a 5.1 km de: centro de la ciudad",Hoteles.com
+Hostal El Naufrago,$22,/,"Manta, a 4.4 km de: centro de la ciudad",Hoteles.com
+Boutique Nazo,$60,/,"Manta, A 0.6 km de la playa",Despegar.com
+Torres del Norte,$186,/,"Manta, a 0.2 km de: centro de la ciudad",Despegar.com
+Sauna Club La Boheme,$32,/,"Manta, a 5.9 km de: centro de la ciudad",Booking.com
+Hostal Restaurante Las Heliconias,$70,/,"Manta, a 23.1 km de: centro de la ciudad",Despegar.com
