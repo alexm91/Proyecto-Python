@@ -30,5 +30,6 @@ class QuotesSpider(scrapy.Spider):
             rating = i.css('.rating-box__value::text').extract()
             pagina = i.css('.item__deal-best-ota::text').extract()
             ubicacion = i.css('.location-details::text').extract()
-            yield {'Nombres': nombres, 'Precios': precios, 'Rating': rating, 'Ubicacion': ubicacion, 'Pagina': pagina}
+            tipo = i.css('.item__accommodation-type::text').extract()
+            yield {'Nombres': nombres, 'Tipo': tipo, 'Precios': precios, 'Rating': rating, 'Ubicacion': ubicacion, 'Pagina': pagina}
 
