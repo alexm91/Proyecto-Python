@@ -1,6 +1,6 @@
 import scrapy
 
-nombre_archivo = 'hoteles.txt'
+#Reservacion para el Feriado de Carnaval para dos personas
 
 class QuotesSpider(scrapy.Spider):
     name = "spider_hoteles"
@@ -31,5 +31,5 @@ class QuotesSpider(scrapy.Spider):
             pagina = i.css('.item__deal-best-ota::text').extract()
             ubicacion = i.css('.location-details::text').extract()
             tipo = i.css('.item__accommodation-type::text').extract()
-            yield {'Nombres': nombres, 'Tipo': tipo, 'Precios': precios, 'Rating': rating, 'Ubicacion': ubicacion, 'Pagina': pagina}
+            yield {'Nombres': nombres, 'Tipo': tipo, 'Precios': precios, 'Rating': rating,'Ubicacion': ubicacion, 'Pagina': pagina}
 
