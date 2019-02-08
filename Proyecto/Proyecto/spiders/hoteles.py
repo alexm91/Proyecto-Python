@@ -24,12 +24,12 @@ class QuotesSpider(scrapy.Spider):
 
     def parse(self, response):
 
-        for i in response.css('.item__flex-column'):
-            nombres = i.css('.name__copytext::text').extract()
-            precios = i.css('.price_min::text').extract()
-            rating = i.css('.rating-box__value::text').extract()
-            pagina = i.css('.item__deal-best-ota::text').extract()
-            ubicacion = i.css('.location-details::text').extract()
-            tipo = i.css('.item__accommodation-type::text').extract()
+        for info in response.css('.item__flex-column'):
+            nombres = info.css('.name__copytext::text').extract()
+            precios = info.css('.price_min::text').extract()
+            rating = info.css('.rating-box__value::text').extract()
+            pagina = info.css('.item__deal-best-ota::text').extract()
+            ubicacion = info.css('.details-paragraph--location::text').extract()
+            tipo = info.css('.item__accommodation-type::text').extract()
             yield {'Nombres': nombres, 'Tipo': tipo, 'Precios': precios, 'Rating': rating,'Ubicacion': ubicacion, 'Pagina': pagina}
 
